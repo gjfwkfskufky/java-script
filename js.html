@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+  <h1 id="demo">helloworld</h1>
+  <p>hi welcome</p>
+  <script type="text/javascript" src="script.js" language="javascript">document.getElementById("demo").innerHTML = "Javascript is Awesome!";
+  document.write("Hello, I am inside the Script tag.");
+  window.alert("hi,i am an alert box!");
+  console.log("This will be displayed inside the console.");
+
+</script>
+</body>
+	</html>
+  
+Step 1: Create variables to store the number of items sold and their prices
+let tshirtsSold = 5;
+let capsSold = 3;
+let tshirtPrice = 400;
+let capPrice = 150;
+
+Step 2: Calculate the total earnings
+let totalEarnings = (tshirtsSold * tshirtPrice) + (capsSold * capPrice);
+
+// Step 3: Display the total earnings
+console.log("Total earnings (before price change): ₹" + totalEarnings);
+
+// Step 4: Change the price of t-shirts to ₹450
+tshirtPrice = 450;
+
+// Step 5: Recalculate the total earnings
+totalEarnings = (tshirtsSold * tshirtPrice) + (capsSold * capPrice);
+
+// Step 6: Print the updated total
+console.log("Total earnings (after price change): ₹" + totalEarnings);
