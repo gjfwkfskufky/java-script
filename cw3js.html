@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>feedback form</title>
+</head>
+<body>
+  <script>
+   
+   
+var feedback = "   I loved the FOOD and the service!   ";
+
+feedback = feedback.trim();
+
+feedback = feedback.toLowerCase();
+
+
+feedback = feedback.replace("food", "ambience");
+
+
+var servicePosition = feedback.indexOf("service");
+console.log("Position of 'service':", servicePosition);
+
+
+var feedbackArray = feedback.split(" ");
+
+
+console.log("Cleaned feedback:", feedback);
+console.log("Feedback as array:", feedbackArray);
+
+
+  </script>
+</body>
+</html>

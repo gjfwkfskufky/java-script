@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+        h2{
+            color: red;
+        }
+         .left-side {
+        width: 50%;
+
+        background: linear-gradient(to bottom, #b79acb, #d9a7b0, #f5c8a6);
+
+                
+    }
+    
+    
+        .container{
+            display: flex;
+            height: 100vh;
+        }
+        .form-box{
+            align-content: center;
+            width: 50%;
+            padding: 30px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 8px;
+            margin: 8px;
+            border: 1px solid #ccc;
+          }
+        input[type="password"]{
+            width: 100%;
+            padding: 8px;
+            margin: 8px;
+            border: 1px solid #ccc;
+        }
+        button{
+            width: 108%;
+            background-color: orangered;
+            border: none;
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-image {
+        display: none;
+    }
+
+    .login-box {
+        width: 90%;
+        padding: 50px;
+    }
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        
+         <div class="left-side"></div>
+            <div class="form-box">
+                <h2>Login Form</h2>
+                <label><b>Email:</b></label>
+                <input type="text"><br> <br>
+                <label><b>Password:</b></label>
+                <input type="password"><br><br>
+                <input type="checkbox">Remember Me <br><br> 
+                <button>Login</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
