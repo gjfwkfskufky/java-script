@@ -8,14 +8,13 @@
 <body>
 <script>
 function replaceNumbers(comment) {
-  // Regex to detect any digit
+
   const digitRegex = /\d+/g;
 
-  // Check whether digits exist
+  
   const hasNumber = digitRegex.test(comment);
 
-  // Replace all digit sequences with "NUMBER"
-  const updatedComment = comment.replace(digitRegex, "NUMBER");
+    const updatedComment = comment.replace(digitRegex, "NUMBER");
 
   return {
     hasNumber,
@@ -23,7 +22,7 @@ function replaceNumbers(comment) {
   };
 }
 
-// Test the function
+
 const testComment =
   "My son is 12 years old. Our flat number is 45 and contact is 9876543210.";
 
