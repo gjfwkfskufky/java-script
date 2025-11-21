@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>comment filtering system</title>
+</head>
+<body>
+<script>
+function filterComment(comment) {
+
+  const bannedWords = /\b(bad|ugly|stupid)\b/gi;
+  const cleanedComment = comment.replace(bannedWords, "***");
+
+  const numberMatches = comment.match(/\b\d+\b/g);
+  const numberCount = numberMatches ? numberMatches.length : 0;
+
+  const capitalMatches = comment.match(/\b[A-Z][a-zA-Z]*\b/g);
+  const capitalCount = capitalMatches ? capitalMatches.length : 0;
+
+  return {
+    cleanedComment,
+    numberCount,
+    capitalCount
+  };
+}
+
+
+const testComment = 
+  "I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great.";
+
+console.log(filterComment(testComment));
+
+</script>
+
+</body>
+</html>
