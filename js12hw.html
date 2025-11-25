@@ -41,7 +41,7 @@
     let timer;
 
     form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent page refresh
+      event.preventDefault(); 
 
       const name = document.getElementById('userName').value.trim();
       const feedback = document.getElementById('userFeedback').value.trim();
@@ -49,19 +49,16 @@
       displayName.textContent = "Name: " + name;
       displayFeedback.textContent = "Feedback: " + feedback;
 
-      // Show confirmation message
       confirmation.style.display = 'block';
 
-      // Clear any previous timer
       clearTimeout(timer);
 
-      // Hide confirmation after 5 seconds
+      
       timer = setTimeout(() => {
         confirmation.style.display = 'none';
       }, 5000);
     });
 
-    // Hover effects
     displayFeedback.addEventListener('mouseover', function() {
       displayFeedback.style.color = 'blue';
     });
